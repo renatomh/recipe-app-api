@@ -46,6 +46,9 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 ### Documentation:
 * [Overview of best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 * [Codechecker](https://codechecker.app/checker/londonappdev/start/recipe-app-api-2/)
+* [GitHub Actions - Marketplace](https://github.com/marketplace?type=actions)
+* [GitHub Actions - Docker Login](https://github.com/marketplace/actions/docker-login)
+* [GitHub Actions - Checkout](https://github.com/marketplace/actions/checkout)
 
 ## 📄 License
 
