@@ -30,4 +30,16 @@ test:
 test-lint:
 	docker-compose run --rm app sh -c "python manage.py test && flake8"
 
-.PHONY: build init-django init-core start clear lint test test-lint
+# This command is used to create migrations for the app
+migrations:
+	docker-compose run --rm app sh -c "python manage.py makemigrations"
+
+# This command is used to run migrations on the database
+migrateup:
+	docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate"
+
+# This command is used to create a superuser for the app
+superuser:
+	docker-compose run --rm app sh -c "python manage.py createsuperuser"
+
+.PHONY: build init-django init-core start clear lint test test-lint migrations migrateup superuser

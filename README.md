@@ -53,6 +53,9 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [Writing custom django-admin commands](https://docs.djangoproject.com/en/3.2/howto/custom-management-commands/)
 * [unittest.mock.Mock.side_effect](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock.side_effect)
 * [django.test.SimpleTestCase](https://docs.djangoproject.com/en/3.2/topics/testing/tools/#django.test.SimpleTestCase)
+* [django.contrib.auth.get_user_model](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#django.contrib.auth.get_user_model)
+* [django.contrib.auth.models.AbstractBaseUser.check_password](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#django.contrib.auth.models.AbstractBaseUser.check_password)
+* [auth-user-model](https://docs.djangoproject.com/en/3.2/ref/settings/#auth-user-model)
 
 ## 📄 License
 
