@@ -49,6 +49,10 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [GitHub Actions - Marketplace](https://github.com/marketplace?type=actions)
 * [GitHub Actions - Docker Login](https://github.com/marketplace/actions/docker-login)
 * [GitHub Actions - Checkout](https://github.com/marketplace/actions/checkout)
+* [psycopg2 dependencies](https://www.psycopg.org/docs/install.html#build-prerequisites)
+* [Writing custom django-admin commands](https://docs.djangoproject.com/en/3.2/howto/custom-management-commands/)
+* [unittest.mock.Mock.side_effect](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock.side_effect)
+* [django.test.SimpleTestCase](https://docs.djangoproject.com/en/3.2/topics/testing/tools/#django.test.SimpleTestCase)
 
 ## 📄 License
 
