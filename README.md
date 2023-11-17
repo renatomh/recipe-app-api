@@ -56,6 +56,8 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [django.contrib.auth.get_user_model](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#django.contrib.auth.get_user_model)
 * [django.contrib.auth.models.AbstractBaseUser.check_password](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#django.contrib.auth.models.AbstractBaseUser.check_password)
 * [auth-user-model](https://docs.djangoproject.com/en/3.2/ref/settings/#auth-user-model)
+* [Django Admin | Reversing admin URLs](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#reversing-admin-urls)
+* [Djano test client](https://docs.djangoproject.com/en/3.2/topics/testing/tools/#overview-and-a-quick-example)
 
 ## 📄 License
 
