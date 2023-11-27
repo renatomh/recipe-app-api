@@ -41,6 +41,8 @@ To run the project in a development environment, execute the following command o
 $ docker-compose up
 ```
 
+You can access Django Admin at: http://localhost:8000/admin
+
 Finally, a [Makefile](./Makefile) was created in order to help providing some of the commands listed above in a simple way.
 
 ### Documentation:
@@ -57,7 +59,9 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [django.contrib.auth.models.AbstractBaseUser.check_password](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#django.contrib.auth.models.AbstractBaseUser.check_password)
 * [auth-user-model](https://docs.djangoproject.com/en/3.2/ref/settings/#auth-user-model)
 * [Django Admin | Reversing admin URLs](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#reversing-admin-urls)
-* [Djano test client](https://docs.djangoproject.com/en/3.2/topics/testing/tools/#overview-and-a-quick-example)
+* [Django test client](https://docs.djangoproject.com/en/3.2/topics/testing/tools/#overview-and-a-quick-example)
+* [drf-spectacular](https://drf-spectacular.readthedocs.io/en/latest/index.html)
+* [drf-spectacular | URL Configuration](https://drf-spectacular.readthedocs.io/en/latest/readme.html#take-it-for-a-spin)
 
 ## 📄 License
 
