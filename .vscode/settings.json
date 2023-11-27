@@ -4,5 +4,6 @@
     },
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
-    }
+    },
+    "flake8.args": ["--config=.flake8"],
 }

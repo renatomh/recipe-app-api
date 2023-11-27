@@ -10,6 +10,10 @@ init-django:
 init-core:
 	docker-compose run --rm app sh -c "python manage.py startapp core"
 
+# This command initialize the user app. It's used when first creating the app
+init-user:
+	docker-compose run --rm app sh -c "python manage.py startapp user"
+
 # This command starts up the service
 start:
 	docker-compose up
@@ -42,4 +46,4 @@ migrateup:
 superuser:
 	docker-compose run --rm app sh -c "python manage.py createsuperuser"
 
-.PHONY: build init-django init-core start clear lint test test-lint migrations migrateup superuser
+.PHONY: build init-django init-core init-user start clear lint test test-lint migrations migrateup superuser
