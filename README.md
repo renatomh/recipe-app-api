@@ -8,7 +8,8 @@ This project was developed to create an online recipe application.
 
 ## 🔍 Features
 
-* 
+* Register a new account and login to it;
+* Create, view, update and delete recipes;
 
 ## 💹 Extras
 
@@ -62,6 +63,9 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [Django test client](https://docs.djangoproject.com/en/3.2/topics/testing/tools/#overview-and-a-quick-example)
 * [drf-spectacular](https://drf-spectacular.readthedocs.io/en/latest/index.html)
 * [drf-spectacular | URL Configuration](https://drf-spectacular.readthedocs.io/en/latest/readme.html#take-it-for-a-spin)
+* [Django REST framework | get_serializer_class(self)](https://www.django-rest-framework.org/api-guide/generic-views/#get_serializer_classself)
+* [Python getattr()](https://docs.python.org/3/library/functions.html#getattr)
+* [Django REST framework | Save and deletion hooks](https://www.django-rest-framework.org/api-guide/generic-views/#get_serializer_classself)
 
 ## 📄 License
 

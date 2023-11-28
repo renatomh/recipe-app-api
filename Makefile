@@ -14,6 +14,10 @@ init-core:
 init-user:
 	docker-compose run --rm app sh -c "python manage.py startapp user"
 
+# This command initialize the recipe app. It's used when first creating the app
+init-recipe:
+	docker-compose run --rm app sh -c "python manage.py startapp recipe"
+
 # This command starts up the service
 start:
 	docker-compose up
@@ -46,4 +50,4 @@ migrateup:
 superuser:
 	docker-compose run --rm app sh -c "python manage.py createsuperuser"
 
-.PHONY: build init-django init-core init-user start clear lint test test-lint migrations migrateup superuser
+.PHONY: build init-django init-core init-user init-recipe start clear lint test test-lint migrations migrateup superuser
