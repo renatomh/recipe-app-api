@@ -67,6 +67,8 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [Django REST framework | get_serializer_class(self)](https://www.django-rest-framework.org/api-guide/generic-views/#get_serializer_classself)
 * [Python getattr()](https://docs.python.org/3/library/functions.html#getattr)
 * [Django REST framework | Save and deletion hooks](https://www.django-rest-framework.org/api-guide/generic-views/#get_serializer_classself)
+* [DRF Writeable nested relationships](https://www.django-rest-framework.org/api-guide/relations/#writable-nested-serializers)
+* [DRF create() and update() methods](https://www.django-rest-framework.org/api-guide/serializers/#saving-instances)
 
 ## 📄 License
 
