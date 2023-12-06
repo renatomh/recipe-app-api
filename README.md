@@ -10,6 +10,7 @@ This project was developed to create an online recipe application.
 
 * Register a new account and login to it;
 * Create, view, update and delete recipes;
+* Create, view, update and delete recipe tags;
 
 ## 💹 Extras
 
