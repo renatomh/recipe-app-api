@@ -45,6 +45,8 @@ $ docker-compose up
 
 You can access Django Admin at: http://localhost:8000/admin
 
+You can access the Swagger documentation at: http://localhost:8000/api/docs
+
 Finally, a [Makefile](./Makefile) was created in order to help providing some of the commands listed above in a simple way.
 
 ### Documentation:
