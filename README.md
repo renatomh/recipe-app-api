@@ -11,6 +11,8 @@ This project was developed to create an online recipe application.
 * Register a new account and login to it;
 * Create, view, update and delete recipes;
 * Create, view, update and delete recipe tags;
+* Create, view, update and delete recipe ingredients;
+* Add images to the recipes;
 
 ## 💹 Extras
 
@@ -71,6 +73,7 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [Django REST framework | Save and deletion hooks](https://www.django-rest-framework.org/api-guide/generic-views/#get_serializer_classself)
 * [DRF Writeable nested relationships](https://www.django-rest-framework.org/api-guide/relations/#writable-nested-serializers)
 * [DRF create() and update() methods](https://www.django-rest-framework.org/api-guide/serializers/#saving-instances)
+* [Django | Managing static files](https://docs.djangoproject.com/en/3.2/howto/static-files/)
 
 ## 📄 License
 
