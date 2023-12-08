@@ -13,10 +13,7 @@ This project was developed to create an online recipe application.
 * Create, view, update and delete recipe tags;
 * Create, view, update and delete recipe ingredients;
 * Add images to the recipes;
-
-## 💹 Extras
-
-* 
+* Filtering by tags and ingredients;
 
 ## 🛠 Technologies
 
@@ -76,6 +73,7 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [Django | Managing static files](https://docs.djangoproject.com/en/3.2/howto/static-files/)
 * [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile)
 * [drf-spectacular | FileField](https://drf-spectacular.readthedocs.io/en/latest/faq.html#filefield-imagefield-is-not-handled-properly-in-the-schema)
+* [drf-spectacular | Workflow & schema customization](https://drf-spectacular.readthedocs.io/en/latest/customization.html)
 
 ## 📄 License
 
