@@ -74,6 +74,8 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [DRF Writeable nested relationships](https://www.django-rest-framework.org/api-guide/relations/#writable-nested-serializers)
 * [DRF create() and update() methods](https://www.django-rest-framework.org/api-guide/serializers/#saving-instances)
 * [Django | Managing static files](https://docs.djangoproject.com/en/3.2/howto/static-files/)
+* [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile)
+* [drf-spectacular | FileField](https://drf-spectacular.readthedocs.io/en/latest/faq.html#filefield-imagefield-is-not-handled-properly-in-the-schema)
 
 ## 📄 License
 
