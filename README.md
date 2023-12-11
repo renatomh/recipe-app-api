@@ -24,6 +24,7 @@ During the development of this project, the following techologies were used:
 - [Django REST framework](https://www.django-rest-framework.org/)
 - [Docker](https://www.docker.com/)
 - [Flake8](https://flake8.pycqa.org/en/latest/)
+- [GitHub Actions (CI/CD)](https://github.com/features/actions)
 - [Terraform](https://www.terraform.io/)
 
 ## 💻 Project Configuration
