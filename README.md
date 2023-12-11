@@ -24,7 +24,7 @@ During the development of this project, the following techologies were used:
 - [Django REST framework](https://www.django-rest-framework.org/)
 - [Docker](https://www.docker.com/)
 - [Flake8](https://flake8.pycqa.org/en/latest/)
-- [GitHub Actions (CI/CD)](https://github.com/features/actions)
+- [Terraform](https://www.terraform.io/)
 
 ## 💻 Project Configuration
 
@@ -49,6 +49,29 @@ You can access Django Admin at: http://localhost:8000/admin
 You can access the Swagger documentation at: http://localhost:8000/api/docs
 
 Finally, a [Makefile](./Makefile) was created in order to help providing some of the commands listed above in a simple way.
+
+## 🏗️ Infrastructure as Code (IaC) with Terraform
+
+To make it easier to provision infrastructure on cloud providers, you can make use of the [Terraform template](main.tf) provided.
+
+First, you'll need to [install Terraform](https://developer.hashicorp.com/terraform/downloads) on your machine; then, since we're using AWS for the specified resources, you'll need to install the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) as well.
+
+After that, you must set up an IAM user with permissions to manage resources, create an access key for the new user and configure the AWS CLI with the following command (entering the access key ID, secret access key, default region and outout format):
+
+```bash
+$ aws configure
+```
+
+Once these steps are done, you can use the Terraform commands to create, update and delete resources.
+
+```bash
+$ terraform init # Downloads the necessary provider plugins and set up the working directory
+$ terraform plan # Creates the execution plan for the resources
+$ terraform apply # Executes the actions proposed in a Terraform plan
+$ terraform destroy # Destroys all remote objects managed by a particular Terraform configuration
+```
+
+If you want to provide the required variables for Terraform automatically when executing the script, you can create a file called *prod.auto.tfvars* file on the root directory, with all needed variables, according to the sample provided ([auto.tfvars](auto.tfvars)).
 
 ### Documentation:
 * [Overview of best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
@@ -81,6 +104,10 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [Docker Hub: nginxinc/nginx-unprivileged](https://hub.docker.com/r/nginxinc/nginx-unprivileged)
 * [Docker | Environment variables in Compose](https://docs.docker.com/compose/environment-variables/)
 * [Chocolatey](https://chocolatey.org/)
+* [Notes: Creating SSH Deploy Key](https://github.com/LondonAppDeveloper/build-a-backend-rest-api-with-python-django-advanced-resources/blob/main/deployment.md#deployment)
+* [Notes: Install and Configure Dependencies](https://github.com/LondonAppDeveloper/build-a-backend-rest-api-with-python-django-advanced-resources/blob/main/deployment.md#install-and-configure-depdencies)
+* [Notes: Managing Service](https://github.com/LondonAppDeveloper/build-a-backend-rest-api-with-python-django-advanced-resources/blob/main/deployment.md#running-docker-service)
+* [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 ## 📄 License
 
