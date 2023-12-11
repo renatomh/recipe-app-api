@@ -28,6 +28,8 @@ During the development of this project, the following techologies were used:
 
 ## 💻 Project Configuration
 
+first, create a *.env* file based on the [*.env.sample*](./.env.sample) template provided.
+
 You should ensure that you have Docker installed on you computer. Once the verification is done, you can use the command below to create the docker image:
 
 ```bash
@@ -74,6 +76,11 @@ Finally, a [Makefile](./Makefile) was created in order to help providing some of
 * [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile)
 * [drf-spectacular | FileField](https://drf-spectacular.readthedocs.io/en/latest/faq.html#filefield-imagefield-is-not-handled-properly-in-the-schema)
 * [drf-spectacular | Workflow & schema customization](https://drf-spectacular.readthedocs.io/en/latest/customization.html)
+* [The 4 best ways to deploy a Django application](https://youtu.be/IoxHUrbiqUo)
+* [uWSGI nginx params file](https://uwsgi-docs.readthedocs.io/en/latest/Nginx.html#what-is-the-uwsgi-params-file)
+* [Docker Hub: nginxinc/nginx-unprivileged](https://hub.docker.com/r/nginxinc/nginx-unprivileged)
+* [Docker | Environment variables in Compose](https://docs.docker.com/compose/environment-variables/)
+* [Chocolatey](https://chocolatey.org/)
 
 ## 📄 License
 

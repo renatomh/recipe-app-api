@@ -1,6 +1,10 @@
-# This command will build the Docker image for the app
+# This command will build the Docker image for the local app
 build:
 	docker-compose build
+
+# This command will build the Docker image for the deploy app
+build-deploy:
+	docker-compose -f docker-compose-deploy.yml build
 
 # This command initialize the Django app. It's used when first creating the app
 init-django:
@@ -18,13 +22,21 @@ init-user:
 init-recipe:
 	docker-compose run --rm app sh -c "python manage.py startapp recipe"
 
-# This command starts up the service
+# This command starts up the local service
 start:
 	docker-compose up
 
-# This command will clear the Docker container for the app
+# This command starts up the deploy service
+start-deploy:
+	docker-compose -f docker-compose-deploy.yml up
+
+# This command will clear the Docker container for the local app
 clear:
 	docker-compose down
+
+# This command will clear the Docker container for the deploy app
+clear-deploy:
+	docker-compose -f docker-compose-deploy.yml down
 
 # This command will lint the app code in the docker container
 lint:
@@ -50,4 +62,4 @@ migrateup:
 superuser:
 	docker-compose run --rm app sh -c "python manage.py createsuperuser"
 
-.PHONY: build init-django init-core init-user init-recipe start clear lint test test-lint migrations migrateup superuser
+.PHONY: build build-deploy init-django init-core init-user init-recipe start start-deploy clear clear-deploy lint test test-lint migrations migrateup superuser

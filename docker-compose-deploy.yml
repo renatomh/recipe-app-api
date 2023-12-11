@@ -1,0 +1,56 @@
+# Defining the compose version
+version: '3.9'
+
+# Defining the services to be run
+services:
+  # Django application service
+  app:
+    # Using the current directory
+    build:
+      context: .
+    # Defining it will always be restarted if it crashes
+    restart: always
+    # Defining volumes
+    volumes:
+      - static-data:/vol/web
+    environment:
+      - DB_HOST=db
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - SECRET_KEY=${DJANGO_SECRET_KEY}
+      - ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
+    depends_on:
+      - db
+
+  # This wil be the hostname for the database on the network
+  db:
+    image: postgres:13-alpine
+    # Defining it will always be restarted if it crashes
+    restart: always
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
+
+  # Defining the proxy service
+  proxy:
+    # Using the proxy directory
+    build:
+      context: ./proxy
+    # Defining it will always be restarted if it crashes
+    restart: always
+    # It needs app service to be already running
+    depends_on:
+      - app
+    # Mapping port 80 on local machine/server to 8000 on app service running host
+    ports:
+      - 80:8000
+    volumes:
+      - static-data:/vol/static
+
+volumes:
+  postgres-data:
+  static-data:
